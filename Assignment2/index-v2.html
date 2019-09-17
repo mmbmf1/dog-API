@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Michael 50 Random Dogs API App</title>
+        <link rel="stylesheet" href="main-v2.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dog API: Request up to 50 Random Dog Images</h1>
+            <form action="#" id="search-form">
+                <label for="img-search">How many dog images would you like?</label>
+                <input required type="number" min="1" max="50" value="3" id="num-img">
+                <input type="submit" id="js-submit" value="Submit">
+            </form>
+            <section class="data hidden">
+                <h2>OMG! Look at these Dogs!</h2>
+                <div class="results-img">
+            </section>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="index-v2.js"></script>
+    </body> 
+</html>
