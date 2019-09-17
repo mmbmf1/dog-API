@@ -23,7 +23,7 @@ function displayResults (responseJson) {
 function watchForm() {
     $('form').submit(function (event){
         event.preventDefault();
-        let submitValue = $('#dog-img').val();
+        let submitValue = $('#dog-img').val().toLowerCase();
         getDogImage(submitValue);
     });
 }
